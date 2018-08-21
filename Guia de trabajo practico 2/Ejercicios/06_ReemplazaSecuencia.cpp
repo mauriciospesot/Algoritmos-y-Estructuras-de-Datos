@@ -33,9 +33,6 @@ void reemplazarSecuencia(list<int> &L, list<int> SEQ, list<int> REEMP) {
 			it_SEQ = SEQ.begin();
 		}
 	}
-	
-	
-	
 }
 
 int main() {

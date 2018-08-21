@@ -33,10 +33,9 @@ int main() {
 		random = 1+rand()%(11-1);
 		cout<<"Numero aleatorio: "<<random<<endl;
 		for(int i=0; i<random; ++i) {
-			if(it_L != L.end()) {
 				++it_L;
-				if(it_L == L.end()) it_L = L.begin();
-			}
+			if(it_L == L.end()) 
+				it_L = L.begin();
 		}
 		cout<<"Se retira: "<<*it_L<<endl;
 		it_L = L.erase(it_L);
