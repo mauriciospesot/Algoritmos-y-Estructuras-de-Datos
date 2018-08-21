@@ -8,7 +8,9 @@ que, dada una lista L, genera una lista de listas LL de tal forma de que cada su
 using namespace std;
 
 void ascendente1(list<int> &L, list<list<int>> &LL) {
-	
+	list<int>::iterator it_L = L.begin();
+	list<list<int>>::iterator it_LL = LL.begin();
+	list<int>::iterator it_subList = (*it_LL)->begin;
 }
 
 int main() {
