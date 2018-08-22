@@ -12,7 +12,7 @@ void ascendente1(list<int> &L, list<list<int>> &LL) {
 	list<int>::iterator it_L = L.begin();
 	list<int>::iterator it_L2 = L.begin();
 	list<list<int>>::iterator it_LL = LL.begin();
-	int menor = *it_L;
+	int num_anterior = *it_L;
 	
 	it_LL = LL.insert(LL.end(), A);
 	
@@ -20,14 +20,14 @@ void ascendente1(list<int> &L, list<list<int>> &LL) {
 	++it_L;
 	
 	while(it_L != L.end()) {
-		if(*it_L>menor) {
+		if(*it_L>num_anterior) {
 			it_LL->insert(it_LL->end(), *it_L);
 		}
 		else {
 			it_LL = LL.insert(LL.end(), A);
 			it_LL->insert(it_LL->begin(), *it_L);
 		}
-		menor = *it_L;
+		num_anterior = *it_L;
 		++it_L;
 	}
 }
