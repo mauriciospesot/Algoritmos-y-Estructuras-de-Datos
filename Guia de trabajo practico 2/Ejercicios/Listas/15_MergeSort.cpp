@@ -45,8 +45,6 @@ void mergesort(list<int> &L) {
 	mergesort(L1); mergesort(L2);
 	
 	merge(L1, L2, L);
-	
-	
 }
 
 int main() {
